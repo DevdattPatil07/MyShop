@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import CartCard from '../../Components/CartCard';
 import Loader from '../../Components/Loader';
 import { useHeader } from '../../Context/HeaderContext'
@@ -11,7 +11,6 @@ const Cart = () => {
     const products=productList.filter((item)=>cartIds.includes(item.id));
     const costs=products.map((item)=>item.price);
     const sum=costs.reduce((num1,num2)=>num1+num2,0);
-    console.log(sum);
 
     const chechOut=()=>alert("Payment Successful,Thank You for Ordering"+"\n"+"Have a Nice Day 😊");
 
@@ -30,10 +29,11 @@ const Cart = () => {
         </div>
         <div className={styles.payment}>
             <div className={styles.paymentCard}>
-                <h1 className='text-2xl'>Price: ${(sum*0.95).toFixed(2)}</h1>
-                <h3 className='text-lg'>Tax: ${(sum*0.1).toFixed(2)}</h3>
-                <h3 className='text-lg'>Discount: ${(sum*0.05).toFixed(2)}</h3>
-                <h1 className='text-3xl'>Final price: ${(sum).toFixed(2)}</h1>
+                <h1 className='text-4xl mb-3 underline'>Order Summary</h1>
+                <div className='flex text-2xl'><span>Price: </span><span className='ml-auto'>${(sum*0.95).toFixed(2)}</span></div>
+                <div className='flex text-lg'><span>Tax: </span><span className='ml-auto'>${(sum*0.1).toFixed(2)}</span></div>
+                <div className='flex text-lg'><span>Discount: </span><span className='ml-auto'>${(sum*0.05).toFixed(2)}</span></div>
+                <div className='flex text-3xl mt-3'><span>Final price: </span><span className='ml-auto'>${(sum).toFixed(2)}</span></div>
                 <button className={styles.paymentButton} onClick={chechOut}>CheckOut</button>
             </div>
         </div>

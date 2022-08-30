@@ -20,6 +20,7 @@
 }
 .paymentCard{
     @apply
+    relative
     xl:inline-block
     w-auto
     h-auto
@@ -36,6 +37,7 @@
     sm:mx-2
     md:mx-4
     xl:mr-8
+    text-zinc-700
 }
 .paymentButton{
     @apply

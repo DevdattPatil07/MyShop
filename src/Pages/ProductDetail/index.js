@@ -55,7 +55,7 @@ const ProductDetail = () => {
             !loading && product?.id ?(
                 <div className='flex flex-wrap max-7-xl mx-auto my-4'>
                     <div className='w-full p-4 sm:w-2/2 md:w-2/2 flex flex-wrap'>
-                        <img src={product.image} className={styles.image}></img>
+                        <img src={product.image} className={styles.image} alt=''></img>
                         <div className='w-full my-auto lg:py-6 lg:pl-10 lg:w-2/3'>
                             <h2 className='text-sm mt-4 mb-2 hover:text-red-500 tracking-widest'>Brand</h2>
                             <h1 className='text-gray-900 text-2xl font-bold mt-1 mb-5 hover:text-green-500'>{product.title}</h1>

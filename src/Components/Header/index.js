@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div className='flex'>
         <Link to='/'className=''>
-            <img className='w-25 h-10 m-5' src={logo} onClick={()=>setCategory("")}></img>
+            <img className='w-25 h-10 m-5' alt='' src={logo} onClick={()=>setCategory("")}></img>
         </Link>
         
         <Link to='/fav' className='block mt-4 ml-auto mr-6'>

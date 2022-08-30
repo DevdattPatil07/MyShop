@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Card from '../../Components/Card';
 import Loader from '../../Components/Loader';
 import { useHeader } from '../../Context/HeaderContext'
