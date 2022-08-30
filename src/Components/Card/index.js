@@ -56,7 +56,7 @@ const Card = ({item}) => {
                 <HeartIcon/>
             </button>
             <div className={styles.cardHeader}>
-                <Link to={`product/${item.id}`}>
+                <Link to={`/product/${item.id}`}>
                     <img className={styles.cardImg} src={item.image} alt='productImage'/>
                 </Link>
             </div>

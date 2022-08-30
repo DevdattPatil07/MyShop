@@ -30,10 +30,10 @@ const Cart = () => {
         </div>
         <div className={styles.payment}>
             <div className={styles.paymentCard}>
-                <h1 className='text-2xl'>Price: {(sum*0.95).toFixed(2)}</h1>
-                <h3 className='text-lg'>Tax:{(sum*0.1).toFixed(2)}</h3>
-                <h3 className='text-lg'>Discount:{(sum*0.05).toFixed(2)}</h3>
-                <h1 className='text-3xl'>Final price:{(sum).toFixed(2)}</h1>
+                <h1 className='text-2xl'>Price: ${(sum*0.95).toFixed(2)}</h1>
+                <h3 className='text-lg'>Tax: ${(sum*0.1).toFixed(2)}</h3>
+                <h3 className='text-lg'>Discount: ${(sum*0.05).toFixed(2)}</h3>
+                <h1 className='text-3xl'>Final price: ${(sum).toFixed(2)}</h1>
                 <button className={styles.paymentButton} onClick={chechOut}>CheckOut</button>
             </div>
         </div>
