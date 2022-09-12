@@ -1,7 +1,7 @@
 {
-  "name": "e-com-project",
+  "name": "MyShop",
   "version": "0.1.0",
-  "homepage": "https://devdattpatil07.github.io/e-com-project/",
+  "homepage": "https://devdattpatil07.github.io/MyShop/",
   "private": true,
   "dependencies": {
     "@heroicons/react": "^1.0.6",
