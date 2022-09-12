@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/e-com-project/static/css/main.d2474f22.css",
-    "main.js": "/e-com-project/static/js/main.47210710.js",
-    "index.html": "/e-com-project/index.html",
-    "main.d2474f22.css.map": "/e-com-project/static/css/main.d2474f22.css.map",
-    "main.47210710.js.map": "/e-com-project/static/js/main.47210710.js.map"
+    "main.css": "/MyShop/static/css/main.d2474f22.css",
+    "main.js": "/MyShop/static/js/main.47210710.js",
+    "index.html": "/MyShop/index.html",
+    "main.d2474f22.css.map": "/MyShop/static/css/main.d2474f22.css.map",
+    "main.47210710.js.map": "/MyShop/static/js/main.47210710.js.map"
   },
   "entrypoints": [
     "static/css/main.d2474f22.css",
