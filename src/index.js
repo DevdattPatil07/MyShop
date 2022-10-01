@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { ProductContextProvider } from './Context/ProductContext';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import { HeaderContextProvider } from './Context/HeaderContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,9 +11,9 @@ root.render(
   // <React.StrictMode>
     <ProductContextProvider>
       <HeaderContextProvider>
-        <BrowserRouter>
+        <HashRouter>
           <App />
-        </BrowserRouter>
+        </HashRouter>
       </HeaderContextProvider>
     </ProductContextProvider>
   // </React.StrictMode>
